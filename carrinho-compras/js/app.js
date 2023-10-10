@@ -10,9 +10,9 @@ function adicionar() {
     let listaCarrinho = document.getElementById('lista-produtos');
     listaCarrinho.innerHTML = listaCarrinho.innerHTML + ` <section class="carrinho__produtos__produto">
     <span class="texto-azul">${qntdProduto}X</span> ${nomeProduto} <span class="texto-azul">${valorProduto}</span>
-  </section>`
+    </section>`
   
-  valorTotal += calculoPreco
+    valorTotal += calculoPreco
 
     let totalCarrinho = document.getElementById('valor-total');
     totalCarrinho.innerHTML = `<span class="texto-azul" id="valor-total">R$${valorTotal}</span>`
